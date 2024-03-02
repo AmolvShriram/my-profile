@@ -17,6 +17,7 @@
       .heading {
         color: cadetblue;
         font-style: italic;
+        text-shadow: ;
        
       }
       .heading1 {
@@ -27,6 +28,16 @@
       .heading2{
         color: magenta;
       }
+      #projectDesc::selection{
+        background-color: orange;
+      }
+      #listSummary li{
+        list-style-type: none;
+      }
+      #listSummary li::marker{
+        content: "✍️";
+      }
+      
     </style>
 </head>
 <body>
@@ -44,8 +55,7 @@
         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
         </svg> &nbsp; amolvshriram@gmail.com  &nbsp; &nbsp; &nbsp;   
         <strong>Resume:</strong>&nbsp;<a href="assets/AS.pdf" id="AS">
-        <svg 
-       class="heading2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-down-fill" viewBox="0 0 16 16">
+        <svg class="heading2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-down-fill" viewBox="0 0 16 16">
         <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5"/>
         </svg> &nbsp;AS</a></p>
       </p> 
@@ -63,8 +73,8 @@
     <section>
         <!-- Home Section -->
         <section id="home">
-            <h2 class="heading"> Professional Summary </h2>
-            <li style="color: chartreuse;"> Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5, CSS3, Bootstrap5, JavaScript, TypeScript.</li>
+            <h2 class="heading" class="listSummary"> Professional Summary </h2>
+            <li> Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5, CSS3, Bootstrap5, JavaScript, TypeScript.</li>
             <li>Experience on working with version control system-GIT And GitHub.</li>
             <li>Experience working with JIRA for user stories and bug tracking.</li>
             <li>Strong Debugging and Troubleshooting code experience using Chrome Developer Tool.</li>
@@ -120,7 +130,7 @@
         <strong>Team Size:</strong> 06 &nbsp; &nbsp;
         <strong>Duration:</strong> <i> 2021- 1<sup>st </sup> July till <u>present</u> </i>
         </p>
-        <p><strong>Project Description:</strong>This project is mainly used for student management in colleges, where it help to manage student record like student registration, student update information and to see all his or her academic activities like score card,atendance.</p>
+        <p id="projectDesc"><strong>Project Description:</strong>This project is mainly used for student management in colleges, where it help to manage student record like student registration, student update information and to see all his or her academic activities like score card,atendance.</p>
         <hr>
         <h2><strong>Roles and Responsibilities:</strong></h2>
         <p>Designed and implemented the user interface using HTML. 5 and CSS <br> 
