@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
-    <style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
       a{
       color: rgb(255, 0, 157);
       font-style: oblique;
@@ -40,7 +42,7 @@
       li{
         padding-left: 5px;
       }
-     </style>
+     </style> -->
 </head>
 <body>
     <!-- Header Section -->
@@ -63,16 +65,27 @@
       </p> 
     </header>
     <!-- Navigation Section -->
-    <nav>
+    <!-- <nav>
       <a href="#home">Home</a>&nbsp;&nbsp;&nbsp;
       <a href="#techstack">Tech Stack</a>&nbsp;&nbsp;&nbsp;
       <a href="#project">Project Details</a>&nbsp;&nbsp;&nbsp;
       <a href="#education">Education</a>&nbsp;&nbsp;&nbsp;
       <a href="personaldetails.html" target="_blank">Personal Details</a>&nbsp;&nbsp;&nbsp;
       <a href="others.html" target="_blank">Others</a>
-    </nav> 
+    </nav>  -->
+    <!-- Navigation Section -->
+    <nav id="navSection">
+      <ul>
+        <li><a href="#home">HOME</a> </li>
+        <li><a href="#techStack">TECH STACK</a> </li>
+        <li><a href="#project">PROJECTS</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+        <li> <a href="others.html" target="_blank">OTHERS</a></li>
+      </ul>
+    </nav>
     <!-- Main Section -->
-    <section>
+    <section id="container">
         <!-- Home Section -->
         <section id="home">
             <h2 class="heading" class="listSummary"> Professional Summary </h2>
