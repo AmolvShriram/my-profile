@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Subscriber</title>
+    <!-- External CSS
+    <link rel="subscribesheet" href="subscribe.css">  -->
+    <style>
+        #card{
+            border: 2px solid aliceblue;
+            width: 355px;
+            height: 500px;
+            margin: auto;
+            margin-top: 30px;
+            box-shadow: 1px 2px 3px 1px rgb(82, 80, 70);
+        }
+        h2{
+            padding-left: 30px;
+        }
+        hr{
+            width: 330px;
+        }
+        p{ padding-left: 20px;
+        }
+        #sect{
+            width: 320px;
+            border: 2px solid dodgerblue ;
+            margin-left: 15px;
+            background-color:dodgerblue ;
+            border-radius: 10px;
+            color: white;
+           
+        }
+        .lines{
+            padding-bottom: 5px;
+        }
+        #text{
+            color: white;
+            font-size: large;
+            font-weight: bolder;
+        }
+        #email-data{
+            position: relative;
+            top: 40px;
+            left: 15px;
+        }
+        #star{
+            color: red;
+        }
+        #email-input{
+            width: 320px;
+            height: 30px;
+            border: 2px solid lightgray;
+            margin-left: 15px;
+            position: relative;
+            top: 50px;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+        #data{
+            position: relative;
+            top: 70px;
+            left: 15px;
+        }
+        #data-info{
+            width: 320px;
+            height: 30px;
+            border: 2px solid lightgray;
+            margin-left: 15px;
+            position: relative;
+            top: 80px;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body id="card">
+    <section>
+        <h2> Subscriber</h2>
+        <hr>
+        <section id="sect">
+            <p>   
+                <!-- <textarea id="text" cols="40" rows="10"> -->
+                <span class="lines"> We're sorry to see you go, but hey, no hard </span> <br>
+                <span class="lines"> feelings, hopefully we will see you back</span> <br>
+                <span class="lines"> one day.</span> <br>
+                <span class="lines"> Please fill in your email address in order to unsubscribe from the list. </span> <br>  
+                <span class="lines"> You will receive an email to confirm your</span> <br>
+                <span class="lines"> unsubscription, just to make sure this is  </span> <br>
+                <span class="lines"> not an accident or somebody else tries to  </span> <br>
+                <span class="lines">unsubscribe you. </span>
+                <!-- </textarea> -->
+               
+            </p>     
+        </section>
+        <section>
+            <label id="email-data" for="">Email <span id="star"> <sup> *</sup></span> :</label> <br>
+            <input id="email-input"  type="text">
+        </section>
+
+        <section >
+            <label id="data" for=""> Unsubscribe Reason :</label> <br>
+            <input id="data-info" type="text" placeholder="Unsubscribe Reason">
+        </section>
+    </section>
+</body>
+</html>
